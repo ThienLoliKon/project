@@ -31,17 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.txtIdSP = new System.Windows.Forms.TextBox();
+            this.txtTenSP = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLoaiHang = new System.Windows.Forms.ComboBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnTìmKiem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,36 +71,36 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "số lượng";
             // 
-            // dataGridView1
+            // dgvSanPham
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 300);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanPham.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvSanPham.Location = new System.Drawing.Point(0, 280);
+            this.dgvSanPham.Name = "dgvSanPham";
+            this.dgvSanPham.Size = new System.Drawing.Size(800, 170);
+            this.dgvSanPham.TabIndex = 3;
             // 
-            // textBox1
+            // txtIdSP
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtIdSP.Location = new System.Drawing.Point(149, 56);
+            this.txtIdSP.Name = "txtIdSP";
+            this.txtIdSP.Size = new System.Drawing.Size(156, 20);
+            this.txtIdSP.TabIndex = 4;
             // 
-            // textBox2
+            // txtTenSP
             // 
-            this.textBox2.Location = new System.Drawing.Point(149, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtTenSP.Location = new System.Drawing.Point(149, 117);
+            this.txtTenSP.Name = "txtTenSP";
+            this.txtTenSP.Size = new System.Drawing.Size(156, 20);
+            this.txtTenSP.TabIndex = 5;
             // 
-            // textBox3
+            // txtSoLuong
             // 
-            this.textBox3.Location = new System.Drawing.Point(566, 59);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtSoLuong.Location = new System.Drawing.Point(566, 59);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(156, 20);
+            this.txtSoLuong.TabIndex = 6;
             // 
             // label4
             // 
@@ -111,17 +111,17 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "loại hàng";
             // 
-            // comboBox1
+            // cmbLoaiHang
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(566, 112);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 21);
-            this.comboBox1.TabIndex = 8;
+            this.cmbLoaiHang.FormattingEnabled = true;
+            this.cmbLoaiHang.Location = new System.Drawing.Point(566, 112);
+            this.cmbLoaiHang.Name = "cmbLoaiHang";
+            this.cmbLoaiHang.Size = new System.Drawing.Size(156, 21);
+            this.cmbLoaiHang.TabIndex = 8;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(50, 201);
+            this.btnThem.Location = new System.Drawing.Point(64, 203);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(96, 41);
             this.btnThem.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(222, 201);
+            this.btnXoa.Location = new System.Drawing.Point(236, 203);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(96, 41);
             this.btnXoa.TabIndex = 10;
@@ -139,7 +139,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(405, 201);
+            this.btnSua.Location = new System.Drawing.Point(419, 203);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(96, 41);
             this.btnSua.TabIndex = 11;
@@ -148,7 +148,7 @@
             // 
             // btnTìmKiem
             // 
-            this.btnTìmKiem.Location = new System.Drawing.Point(614, 201);
+            this.btnTìmKiem.Location = new System.Drawing.Point(628, 203);
             this.btnTìmKiem.Name = "btnTìmKiem";
             this.btnTìmKiem.Size = new System.Drawing.Size(96, 41);
             this.btnTìmKiem.TabIndex = 12;
@@ -164,19 +164,19 @@
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbLoaiHang);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtSoLuong);
+            this.Controls.Add(this.txtTenSP);
+            this.Controls.Add(this.txtIdSP);
+            this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmSanPham";
             this.Text = "form San Pham";
             this.Load += new System.EventHandler(this.frmSanPham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,12 +187,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DataGridView dgvSanPham;
+        private System.Windows.Forms.TextBox txtIdSP;
+        private System.Windows.Forms.TextBox txtTenSP;
+        private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLoaiHang;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;

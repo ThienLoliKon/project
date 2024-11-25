@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace project
 {
-    public partial class frmKhachHang : Form
+    public partial class frmPhongBan : Form
     {
-        public frmKhachHang()
+        public frmPhongBan()
         {
             InitializeComponent();
         }
 
+        private void frmPhongBan_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
